@@ -1,5 +1,9 @@
 # Tic Tac Toe 
 
+## Demo
+
+https://errikosg.github.io/tictactoe-ng/
+
 ## Setup
 Clone the github repository:
 
@@ -14,4 +18,3 @@ ng serve -o
 
 ```
 Visit http://localhost:4200 to play the game.
-
