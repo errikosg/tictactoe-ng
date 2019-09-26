@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="win_board">
+        <div [ngClass]="{'win_item':true, 'active':player==='X'}"><img src="./assets/ic_X.png" alt=" "> : {{x_wins}} wins</div>
+        <div [ngClass]="{'win_item':true, 'active':player==='O'}"><img src="./assets/ic_O.png" alt=" "> : {{o_wins}} wins</div>
+    </div>
+
+    <div class="grid-container">
+        <app-tile *ngFor="let val of tiles; let i=index" [ind]="i" [value]="val" (click)="playerMove(i)"></app-tile>
+    </div>
+
+    <div class="win_card" *ngIf="gameOver">
+        <h2 *ngIf="winner; else draw" class="h_win">
+            Player <img *ngIf="winner==='X'" src="./assets/ic_X_2.png" alt=" "><img *ngIf="winner==='O'" src="./assets/ic_O_2.png" alt=" "> has won!
+        </h2>
+        <ng-template #draw><h2 class="h_win">It's a draw</h2></ng-template>
+        <div style="width:50%;margin:auto;text-align:center"><button mat-raised-button color="primary" (click)="startNewGame()">Start New Game!</button></div>
+    </div>
+</div>

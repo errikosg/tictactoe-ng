@@ -1,0 +1,32 @@
+.grid-item {
+    background-color: #eeee;
+    border: 3px solid #666;
+    height: 135px;
+    padding: 5px 1px;
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+  .left {
+    border-left: none !important;
+}
+
+.top {
+    border-top: none !important;
+}
+
+.right {
+    border-right: none !important;
+}
+
+.bot {
+    border-bottom: none !important;
+}
+
+img {
+    width: 55%;
+    height: auto;
+    margin-top: 30px;
+}
